@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/uikit.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/js/uikit.min.js"></script>
+        <script src="./assets/js/uikit-icons.min.js"></script>
+    </head>
+    <body  class="uk-light" >
+        <nav class="uk-navbar-container uk-position-fixed uk-navbar-transparent uk-padding-small" style="top: 0; width: 100vw; height: 90px;" uk-navbar  >
+            <a class="uk-navbar-item uk-logo" href="">
+                <img data-src="./assets/img/logo2.png" width="100px" height="90px" alt="Logo Com o Nome Pedro Vieira" uk-img  class="uk-margin-small" >
+            </a>
+            <div class="uk-navbar-right uk-margin-medium-right">
+                <a href="#offcanvas-slide" class="uk-button uk-button-normal uk-margin-auto" uk-toggle><span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left ">Menu</span></a>
+
+                <div id="offcanvas-slide" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+
+                        <ul class="uk-nav uk-nav-default">
+                            <li class="uk-active"><a href="#">Menu</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#">Item</a></li>
+                            <li class="uk-nav-divider"></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="uk-position-relative uk-position-top uk-visible-toggle uk-dark uk-padding-medium-right slide " tabindex="-1" uk-slideshow="autoplay: true autoplay-interval: 2000" uk-slideshow="animation: push">
+                <div class="uk-position-center uk-position-medium card-name" style="position: absolute;">
+                    <div uk-slideshow-parallax = "x: 500, -500" >
+                        <div class="uk-card uk-card uk-card-body uk-width-xlarge uk-border-rounded  uk-light">
+                            <h3 class="uk-card-title uk-text-primary uk-text-center">PEEDRO VIEIRAA</h3>
+                            <p class="uk-text-center">Web-Developer | Sofware-Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="uk-slideshow-items uk-height-viewport" >
+                    <li>
+                        <img src="./assets/img/bg1.jpg" uk-cover alt="" >
+                        
+                    </li>
+                    <li>
+                        <img src="./assets/img/hao-wang-pVq6YhmDPtk-unsplash.jpg" alt="" uk-cover>
+                        
+                    </li>
+                    <li>
+                        <img src="./assets/img/nathan-dumlao-ciO5L8pin8A-unsplash.jpg" alt="" uk-cover>
+                        
+                    </li>
+                </ul>
+                
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            
+            </div>
+            <div>
+                <h2>kasdjask</h2>
+            </div>  
+        </main>
+          
+    </body>
+</html>

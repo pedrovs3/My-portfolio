@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Stretch sans";
+}
+
+@font-face{
+    font-family: "Stretch sans";
+    src: url(../fonts/STRRETCH\ SANS.ttf);
+}
+
+nav{
+    z-index: 1;
+}
+main{
+    background-color: #252525;
+}
+
+.slide{
+    height: 80vh;
+    overflow: hidden;
+}
+
+.card-name{
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    height: 300px;
+    z-index: 1;
+}
+
+.uk-card h3{
+    font-size: 4rem;
+    font-family: "Stretch sans";
+}
+
+.uk-card p{
+    color: #f5f5f5;
+}
+
+.uk-card p:after{
+    content: "";
+    position: relative;
+    display: flex;
+    height: 2px;
+    background-color: turquoise;
+}
+
