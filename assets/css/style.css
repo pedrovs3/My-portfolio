@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "Stretch sans";
+    font-family: "gotham";
 }
 
 @font-face{
@@ -10,11 +10,23 @@ body{
     src: url(../fonts/STRRETCH\ SANS.ttf);
 }
 
+@font-face{
+    font-family: "gotham";
+    src: url(../fonts/Gotham-Black.otf);
+}
+@font-face{
+    font-family: "gotham-paragrafo";
+    src: url(../fonts/Gotham-Light.otf);
+}
+
 nav{
     z-index: 1;
 }
 main{
     background-color: #252525;
+}
+section{
+    min-height: 100vh;
 }
 
 .slide{
@@ -27,17 +39,24 @@ main{
     left: 50%;
     right: 50%;
     bottom: 50%;
-    height: 300px;
+    height: 400px;
     z-index: 1;
+}
+
+.uk-card{
+    align-content: center;
 }
 
 .uk-card h3{
     font-size: 4rem;
     font-family: "Stretch sans";
+    width: 500px;
 }
 
 .uk-card p{
     color: #f5f5f5;
+    font-size: 1.3rem;
+    font-family: "Stretch sans";
 }
 
 .uk-card p:after{
@@ -46,5 +65,11 @@ main{
     display: flex;
     height: 2px;
     background-color: turquoise;
+    width: 110%;
+    right: 5%;
+}
+
+.paragrafos{
+    font-family: "gotham-paragrafo";
 }
 
