@@ -3,7 +3,7 @@ menu.style.zIndex = "2";
 
 window.onscroll = function () {
     let currentScroll = window.pageYOffset;
-    if (currentScroll <= 250) {
+    if (currentScroll <= 100) {
       menu.classList.add('.uk-navbar-transparent');
       menu.style.backgroundColor = null;
     } else {

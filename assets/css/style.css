@@ -12,7 +12,7 @@
 }
 
 :root{
-    --dark-color: #202020;
+    --dark-color: #313131;
     --contrast-color: #FFC857;
 }
 
@@ -46,34 +46,6 @@ h1 {
     text-transform: uppercase;
 }
 
-h2 {
-    font-size: 3.125rem;
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-    font-family: "SF Pro bold";
-}
-
-h3 {
-    font-size: 3.125rem;
-    font-family: "SF Pro bold";
-}
-
-h4 {
-    font-size: 2.81rem;
-    font-family: "SF Pro bold";
-}
-
-h5 {
-    font-size: 2.5rem;
-    font-family: "SF Pro bold";
-}
-
-h6 {
-    font-size: 2.18rem;
-    font-family: "SF Pro bold";
-}
-
 p {
     font-size: 1rem;
 }
@@ -87,7 +59,7 @@ main {
 }
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh;  */
 }
 
 .slide {
@@ -112,22 +84,22 @@ section {
     align-content: center;
 }
 
-.uk-card h3 {
+.titulo {
     font-size: 6.25rem;
     font-family: "Stretch sans";
     width: 50rem;
     line-height: 6.25rem;
-    color: var(--contrast-color);
+    color: var(--contrast-color)!important;
     text-shadow: 10px 10px 1px black;
 }
 
-.uk-card p {
+.card-principal p {
     color: #f5f5f5;
     font-size: 1.25rem;
     font-family: "Stretch sans";
 }
 
-.uk-card p:after {
+.card-principal p:after {
     content: "";
     position: relative;
     display: flex;
@@ -135,4 +107,12 @@ section {
     background-color: var(--contrast-color);
     width: 110%;
     right: 5%;
+}
+
+.uk-card h2 {
+    font-family: "SF Pro";
+}
+
+.num-list{
+    color: var(--contrast-color);
 }
