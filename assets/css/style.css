@@ -58,8 +58,8 @@ main {
     background-color: var(--dark-color);
 }
 
-section {
-    /* min-height: 100vh;  */
+#competencias {
+    padding-top: 100px;
 }
 
 .slide {
