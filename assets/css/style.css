@@ -206,6 +206,31 @@ main, footer {
     width: 15%;
     left: -10%;
 }
+.uk-slider-items a{
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(1);
+}
+
+.uk-slider-items a:nth-child(4){
+    background-image: url(../img/portfolio.png);
+}
+.uk-slider-items a:nth-child(5){
+    background-image: url(../img/strange.png);
+}
+.uk-slider-items a:nth-child(6){
+    background-image: url(../img/medicura.png);
+}
+.uk-slider-items a:nth-child(7){
+    background-image: url(../img/timer.png);
+}
+.uk-slider-items a:nth-child(8){
+    background-image: url(../img/todolist.png);
+}
+.uk-slider-items a:nth-child(9){
+    background-image: url(../img/pallete.png);
+}
+
 
 @media screen and (max-width:800px) {
     main{
@@ -224,5 +249,40 @@ main, footer {
     }
     .uk-height-viewport{
         min-height: 100vh!important;
+    }
+    .card-lang::after{
+        content: '';
+        display: block;
+        position: relative;
+        top: 20px;
+        height: 10px;
+        left: 0%;
+        width: 100%;
+        background-color: var(--dark-color);
+    }
+    .card-lang::before{
+        top: 110px;
+        left: 0%;
+        width: 0%;
+    }
+    .uk-grid div:nth-child(1) .card-lang:hover::before{
+        width: 35%;
+        left: 0%;
+    }
+    .uk-grid div:nth-child(2) .card-lang:hover::before{
+        width: 97%;
+        left: 0%;
+    }
+    .uk-grid div:nth-child(3) .card-lang:hover::before{
+        width: 95%;
+        left: 0%;
+    }
+    .uk-grid div:nth-child(4) .card-lang:hover::before{
+        width: 65%;
+        left: 0%;
+    }
+    .uk-grid div:nth-child(5) .card-lang:hover::before{
+        width: 15%;
+        left: 0%;
     }
 }
