@@ -206,3 +206,23 @@ main, footer {
     width: 15%;
     left: -10%;
 }
+
+@media screen and (max-width:800px) {
+    main{
+        width: 100vw;
+        overflow: hidden;
+    }
+    .titulo{
+        font-size: 2.85rem;
+        line-height: 4rem;
+        width: fit-content;
+        padding-top: 50px;
+    }
+
+    .title-lang{
+        font-size: 2.85rem;
+    }
+    .uk-height-viewport{
+        min-height: 100vh!important;
+    }
+}
