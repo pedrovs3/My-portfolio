@@ -133,6 +133,7 @@ main, footer {
 
 .uk-card-secondary:hover>:not([class*=uk-card-media]) svg{
     color: var(--contrast-color);
+    filter: drop-shadow( 1px 1px 5px var(--contrast-color));
 }
 
 .uk-card-secondary:hover> .fa-brands{
@@ -187,7 +188,7 @@ main, footer {
 }
 
 .uk-grid div:nth-child(1) .card-lang:hover::before{
-    width: 35%;
+    width: 65%;
     left: -10%;
 }
 .uk-grid div:nth-child(2) .card-lang:hover::before{
