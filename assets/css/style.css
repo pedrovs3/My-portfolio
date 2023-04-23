@@ -69,14 +69,14 @@ main, footer {
 
 .slide img{
     filter: blur(2px) grayscale(1);
-    
+
 }
 
 .card-name {
     top: 50%;
     left: 50%;
     bottom: 50%;
-    height: 25rem;  
+    height: 25rem;
     z-index: 1;
 }
 
@@ -187,30 +187,39 @@ main, footer {
     z-index: 2;
 }
 
-.uk-grid div:nth-child(1) .card-lang:hover::before{
-    width: 65%;
+.uk-flex {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.uk-flex div:nth-child(1) .card-lang:hover::before{
+    width: 120%;
     left: -10%;
 }
-.uk-grid div:nth-child(2) .card-lang:hover::before{
-    width: 112%;
+.uk-flex div:nth-child(2) .card-lang:hover::before{
+    width: 120%;
     left: -10%;
 }
-.uk-grid div:nth-child(3) .card-lang:hover::before{
-    width: 110%;
+.uk-flex div:nth-child(3) .card-lang:hover::before{
+    width: 120%;
     left: -10%;
 }
-.uk-grid div:nth-child(4) .card-lang:hover::before{
+.uk-flex div:nth-child(4) .card-lang:hover::before{
     width: 85%;
     left: -10%;
 }
-.uk-grid div:nth-child(5) .card-lang:hover::before{
-    width: 15%;
+.uk-flex div:nth-child(5) .card-lang:hover::before{
+    width: 105%;
     left: -10%;
 }
 .uk-slider-items a{
     background-size: cover;
     background-position: center center;
     filter: grayscale(1);
+}
+
+.card-lang img {
+    height: 5em;
 }
 
 .uk-slider-items a:nth-child(4){
@@ -234,9 +243,15 @@ main, footer {
 
 
 @media screen and (max-width:800px) {
+    html {
+        overflow-x: hidden;
+    }
     main{
         width: 100vw;
         overflow: hidden;
+    }
+    .card-principal {
+        padding-left: 0;
     }
     .titulo{
         font-size: 2.85rem;
@@ -244,13 +259,16 @@ main, footer {
         width: fit-content;
         padding-top: 50px;
     }
-
+    #projetos {
+        padding-top: 50px;
+    }
     .title-lang{
         font-size: 2.85rem;
     }
     .uk-height-viewport{
         min-height: 100vh!important;
     }
+
     .card-lang::after{
         content: '';
         display: block;
@@ -261,28 +279,29 @@ main, footer {
         width: 100%;
         background-color: var(--dark-color);
     }
+
     .card-lang::before{
         top: 110px;
         left: 0%;
         width: 0%;
     }
-    .uk-grid div:nth-child(1) .card-lang:hover::before{
+    .uk-flex div:nth-child(1) .card-lang:hover::before{
         width: 35%;
         left: 0%;
     }
-    .uk-grid div:nth-child(2) .card-lang:hover::before{
+    .uk-flex div:nth-child(2) .card-lang:hover::before{
         width: 97%;
         left: 0%;
     }
-    .uk-grid div:nth-child(3) .card-lang:hover::before{
+    .uk-flex div:nth-child(3) .card-lang:hover::before{
         width: 95%;
         left: 0%;
     }
-    .uk-grid div:nth-child(4) .card-lang:hover::before{
+    .uk-flex div:nth-child(4) .card-lang:hover::before{
         width: 65%;
         left: 0%;
     }
-    .uk-grid div:nth-child(5) .card-lang:hover::before{
+    .uk-flex div:nth-child(5) .card-lang:hover::before{
         width: 15%;
         left: 0%;
     }
